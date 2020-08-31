@@ -1,0 +1,197 @@
+/* CSSリセット */
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  font-weight: normal;
+}
+body {
+  line-height: 1;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+del {
+  text-decoration: line-through;
+}
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+input,
+select {
+  vertical-align: middle;
+}
+
+.wrapper {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+body {
+  background-image: url(images/back04.jpg);
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0);
+  background-blend-mode: lighten;
+  display: flex;
+  min-height: 100vh;
+}
+.leftNavigation {
+  width: 500px;
+  text-align: center;
+  color: white;
+}
+.content {
+  flex: 1;
+  text-align: right;
+  margin-left: 10px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 300%;
+  color: white;
+}
+
+.p1 {
+  font-family: sans-serif;
+  font-size: 300%;
+  font-weight: bold;
+  position: relative;
+  /* top: 100px; */
+}
+.p2 {
+  font-family: sans-serif;
+  font-size: 50%;
+  font-weight: bold;
+  position: relative;
+  right: 50%;
+}
+.furin {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+}
+.mgr5 {
+  margin-right: 5px;
+}
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+  .body {
+  }
+}
