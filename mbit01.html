@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>automatic-windchime</title>
+    <meta charset="UTF-8" name="viewport" content="width=320; minimum-scale=1.0; maximum-scale=2.0;" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="images/icon.ico" type="image/x-icon">
+  </head>
+  <script src="https://chirimen.org/remote-connection/js/RelayServer.js"></script>
+  <script src="https://chirimen.org/chirimen-micro-bit/polyfill/microBitBLE.js"></script>
+  <script type="text/javascript"
+  src="https://chirimen.org/chirimen/gc/i2c/i2c-ADT7410/node_modules/@chirimen-raspi/chirimen-driver-i2c-adt7410/ADT7410.js"></script>
+  <script src="mbit01.js"></script>
+  
+  
+  <body>
+    <!-- <img src="images/title.png" width="250" height="250" /> -->
+    <!-- <form name="js"> -->
+      <!-- 温度センサ, モーターに接続されているmicrobitに接続してください. <br>
+        時間間隔をsetすると始まります. <br> -->
+        <!-- <input type="image" src="images/connect.png" name="connect" width="80" height="30" onclick="connect()" value="Connect"></input> -->
+        <!-- <input type="image"  src="images/disconnect.png" name="disconnect"width="80" height="30" onclick="disconnect()" value="Disconnect"></input> -->
+        <header class  ="leftNavigation">
+          <table>
+            <tr>
+              <td>  時間間隔(分):</td>
+              <td><input type="text" id="delta"></input></td>
+              <td><input type="image" src="images/set.png"name="set" width="60" height="30" onclick=connect() value="Set"></input></td>
+            </tr>
+            <tr>
+              <td >風鈴の鳴る時間間隔(分): </td>
+              <td id="dl">-</td>
+            </tr>
+            <tr>
+              <td id="msg"></tr>
+            </tr>
+          </table>
+        </header>
+      <!-- <img class="furin" src="images/fuurin.png"></div> -->
+      <div  class="content">  
+      <div class="p1" id="tim">-</div>
+      <div class="p1" id="temp"></div>
+      <div class="p1" >℃</div>
+      <div class="p2">次回の風鈴時刻: </div>
+      <div id="nxt"></div>
+      <div id="message"></div>
+  </div>
+  </html>
+  

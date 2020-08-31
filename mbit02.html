@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>automatic-windchime</title>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="images/icon.ico" type="image/x-icon">
+  </head>
+  <script src="https://chirimen.org/remote-connection/js/RelayServer.js"></script>
+  <script src="https://chirimen.org/chirimen-micro-bit/polyfill/microBitBLE.js"></script>
+  <script type="text/javascript"
+    src="https://chirimen.org/chirimen/gc/contrib/examples/i2c-NEOPIXEL_I2C/node_modules/@chirimen-raspi/chirimen-driver-i2c-neopixel-i2c/NEOPIXEL_I2C.js"></script>
+
+  <script src="mbit02.js"></script>
+  <body>
+    <h3>自動風鈴</h3>
+    風鈴に接続されているmicrobitに接続してください. 
+    <form name="js">
+    <input type="button" onclick="connect()" value="Connect"></input>
+    <input type="button" onclick="disconnect()" value="Disconnect"></input>
+    <div id="msg">---</div>
+
+    <hr />
+    <img src="images/pyoko8_senpuuki.png
+    " width="200" height="200" />
+  </body>
+</html>
